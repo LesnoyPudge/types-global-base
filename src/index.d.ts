@@ -1,1 +1,1 @@
-import './Array.d.ts'
+/// <reference path="Array.d.ts" />
