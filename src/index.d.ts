@@ -1,1 +1,1 @@
-export * from './Array.d'
+import './Array.d.ts'
