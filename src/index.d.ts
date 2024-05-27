@@ -1,1 +1,1 @@
-/// <reference path="Array.d.ts" />
+import './Array'
