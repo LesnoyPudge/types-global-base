@@ -12,7 +12,7 @@ const ob = {
 }
 
 const arr2 = ['data', 'some'] as const;
-
+arr2.includes(5)
 const qweqwe = arr2.reduce<Record<'data' | 'some', number>>((acc, cur) => {
     acc[cur] = 5;
     return acc;

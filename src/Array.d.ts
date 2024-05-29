@@ -8,6 +8,11 @@ interface Array<T> {
         ) => U, 
         initialValue: Partial<U>
     ): U;
+
+    includes(
+        searchElement: unknown,
+        fromIndex?: number,
+    ): boolean;
 }
 
 interface ReadonlyArray<T> {
@@ -20,4 +25,9 @@ interface ReadonlyArray<T> {
         ) => U, 
         initialValue: Partial<U>
     ): U;
+
+    includes(
+        searchElement: unknown,
+        fromIndex?: number,
+    ): boolean;
 }
