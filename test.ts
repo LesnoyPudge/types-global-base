@@ -17,3 +17,6 @@ const qweqwe = arr2.reduce<Record<'data' | 'some', number>>((acc, cur) => {
     acc[cur] = 5;
     return acc;
 }, {})
+const qwe2 = [1, undefined].filter(Boolean)
+const el = document
+.createElement('div').cloneNode();

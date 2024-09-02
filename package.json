@@ -1,8 +1,8 @@
 {
     "name": "@lesnoypudge/types-global-base",
-    "version": "1.3.0",
+    "version": "1.4.0",
     "description": "lesnoypudge's types-global-base",
-    "types": "./index.d.ts",
+    "types": "./src/index.d.ts",
     "scripts": {
         "deploy": "git add . && git commit -m 'update' && git push && git status",
         "publish": "npm publish --access public"
