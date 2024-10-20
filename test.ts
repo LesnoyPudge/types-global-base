@@ -20,3 +20,15 @@ const qweqwe = arr2.reduce<Record<'data' | 'some', number>>((acc, cur) => {
 const qwe2 = [1, undefined].filter(Boolean)
 const el = document
 .createElement('div').cloneNode();
+
+const avc = {
+    b: 1,
+    c: 'data',
+    4: 'num'
+} as const
+
+
+const keys = Object.keys<typeof avc>(avc)
+//     ^?
+const ent = Object.entries<typeof avc>(avc)
+//     ^?
