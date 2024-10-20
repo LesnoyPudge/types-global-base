@@ -1,6 +1,6 @@
 {
     "name": "@lesnoypudge/types-global-base",
-    "version": "1.4.0",
+    "version": "2.0.0",
     "description": "lesnoypudge's types-global-base",
     "types": "./src/index.d.ts",
     "scripts": {
@@ -14,10 +14,8 @@
         "types-global-base"
     ],
     "dependencies": {
-        "@total-typescript/ts-reset": "^0.6.0",
-        "types-spring": "^2.2.2"
-    },
-    "devDependencies": {
-        "typescript": "^5.5.4"
+        "@total-typescript/ts-reset": "^0.6.1",
+        "types-spring": "^2.2.2",
+        "typescript": "^5.6.3"
     }
 }
