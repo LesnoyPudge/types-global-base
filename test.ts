@@ -27,8 +27,8 @@ const avc = {
     4: 'num'
 } as const
 
-
 const keys = Object.keys<typeof avc>(avc)
 //     ^?
-const ent = Object.entries<typeof avc>(avc)
+
+const keys2 = Object.keys(avc)
 //     ^?

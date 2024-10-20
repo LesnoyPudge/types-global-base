@@ -2,11 +2,7 @@
 
 
 interface ObjectConstructor {
-    keys<_Value extends UnknownRecord = UnknownStringRecord>(
-        o: UnknownRecord
+    keys<_Value extends Record<PropertyKey, unknown> = Record<string, unknown>>(
+        o: Record<string, unknown>
     ): (keyof _Value)[];
-    
-    entries<_Value extends UnknownRecord = UnknownStringRecord>(
-        o: UnknownRecord
-    ): [keyof _Value, _Value[keyof _Value]][];
 }
