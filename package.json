@@ -1,6 +1,6 @@
 {
     "name": "@lesnoypudge/types-global-base",
-    "version": "3.0.0",
+    "version": "3.0.1",
     "description": "lesnoypudge's types-global-base",
     "types": "./src/index.d.ts",
     "scripts": {
