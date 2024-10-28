@@ -1,28 +1,47 @@
 {
     "include": [
         "test.ts",
-    ],
-    "exclude": [
-        "node_modules",
-        "build"
+        "node_modules/@types"
     ],
     "compilerOptions": {
-        "types": ["./src/index.d.ts"],
-        "lib": ["ESNext", "DOM"],
-        "module": "ESNext",
-        "target": "ESNext",
-        "moduleDetection": "auto",
-        "outDir": "build",
-        "skipLibCheck": true,
-        "strict": true,
-        "moduleResolution": "Node",
-        "esModuleInterop": true,
-        "resolveJsonModule": true,
-        "isolatedModules": true,
-        "allowJs": true,
-        "declaration": true,
-        "declarationMap": false,
+        "pretty": true,
+        "explainFiles": false,
         "baseUrl": ".",
-        "declarationDir": "build",
+        "paths": {},
+
+        "types": [
+            "./src/index.d.ts"
+        ],
+
+        "jsx": "react-jsx",
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "target": "ES2022",
+        "verbatimModuleSyntax": false,
+        "allowJs": true,
+        "checkJs": true,
+        "resolveJsonModule": true,
+        "moduleDetection": "auto",
+
+        "strict": true,
+        "noUncheckedIndexedAccess": true,
+        "noFallthroughCasesInSwitch": true,
+
+        "noEmit": true,
+        "outDir": "build",
+        "sourceMap": true,
+        "declaration": true,
+
+        // "moduleResolution": "NodeNext",
+        // "module": "NodeNext",
+
+        "moduleResolution": "Bundler",
+        "module": "ESNext",
+
+        "lib": [
+            "ES2022",
+            // "DOM",
+            // "DOM.Iterable"
+        ],
     }
 }

@@ -4,8 +4,21 @@
 const qwe = JSON.parse('')
 const a = [1, 2, 3] as const;
 const arr = a.map(r => ({wow: r}))   
+
+// @ts-expect-error
 const inputWCls = document.querySelector('input.cls');  
+// @ts-expect-error
 localStorage.abc
+// @ts-expect-error
+const el = document.createElement('div').cloneNode();
+// @ts-expect-error
+console.log('')
+
+const as = Object.assign({}, {a: 1}, {b: 2})
+//    ^?
+const t = Object.assign({ a: 7, b: 8 }, { b: '' }) 
+//    ^?
+
 const ob = {
     data: '1',
     some: '2',
@@ -18,8 +31,6 @@ const qweqwe = arr2.reduce<Record<'data' | 'some', number>>((acc, cur) => {
     return acc;
 }, {})
 const qwe2 = [1, undefined].filter(Boolean)
-const el = document
-.createElement('div').cloneNode();
 
 const avc = {
     b: 1,

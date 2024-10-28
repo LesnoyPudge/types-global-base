@@ -1,5 +1,4 @@
 import './Array';
 import './Object';
-import 'types-spring/sources/index.d.ts';
-import 'types-spring';
+import 'node_modules/types-spring/sources/ecmascript';
 import '@total-typescript/ts-reset';
